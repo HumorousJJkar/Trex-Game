@@ -47,7 +47,7 @@ function setup() {
   
   trex.setCollider("circle",0,0,40);
   
-  trex.debug=true;
+  //trex.debug=true;
   
   trex.scale = 0.5;
   
@@ -92,7 +92,7 @@ function draw() {
       checkPoint.play();
     }
     
-    if(keyDown("space") && trex.y >= 139) {
+    if(keyDown("space") && trex.y >= 149) {
       jump.play();
       trex.velocityY = -12;
   }
@@ -203,7 +203,7 @@ function spawnObstacles() {
       default: break;
     }
     
-    obstacle.debug=true;
+   // obstacle.debug=true;
     
     //assign scale and lifetime to the obstacle           
     obstacle.scale = 0.5;
